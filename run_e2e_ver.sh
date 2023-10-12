@@ -21,7 +21,7 @@ MEM="64" # max memory (in GB)
 # Inputs:
 IN="$1"                # input.fasta
 WDIR=`realpath -s $2`  # working folder
-export DATABASEDIR=`$3`    # data folder - we export this because it is used in subprocesses
+export DATABASEDIR=`realpath -s $3`    # data folder - we export this because it is used in subprocesses
 
 
 LEN=`tail -n1 $IN | wc -m`
