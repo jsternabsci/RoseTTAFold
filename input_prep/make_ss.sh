@@ -8,7 +8,7 @@ o_ss="$2"
 
 ID=$(basename $i_a3m .a3m).tmp
 
-$PIPEDIR/csblast-2.2.3/bin/csbuild -i $i_a3m -I a3m -D $PIPEDIR/csblast-2.2.3/data/K4000.crf -o $ID.chk -O chk
+csbuild -i $i_a3m -I a3m -D $PIPEDIR/csblast-2.2.3/data/K4000.crf -o $ID.chk -O chk
 
 head -n 2 $i_a3m > $ID.fasta
 echo $ID.chk > $ID.pn

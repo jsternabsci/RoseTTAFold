@@ -22,6 +22,7 @@ dependencies:
   - cffi=1.14.5=py38ha65f79e_0
   - chardet=4.0.0=py38h578d9bd_1
   - cryptography=3.4.7=py38ha5dfef3_0
+  - csblast=2.2.3
   - cudatoolkit=11.1.74=h6bb024c_0
   - ffmpeg=4.3=hf484d3e_0
   - freetype=2.10.4=h5ab3b9f_0

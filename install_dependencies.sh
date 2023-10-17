@@ -23,5 +23,5 @@ fi
 echo "downloading cs-blast . . ."
 wget https://github.com/cangermueller/csblast/archive/refs/tags/v2.2.3.tar.gz -O csblast-2.2.3.tar.gz
 mkdir -p csblast-2.2.3
-tar xf csblast-2.2.3.tar.gz -C csblast-2.2.3 --strip-components=1
+tar xzf csblast-2.2.3.tar.gz -C csblast-2.2.3 --strip-components=1
 
