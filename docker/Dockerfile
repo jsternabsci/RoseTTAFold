@@ -8,12 +8,14 @@ RUN \
     # Install...
     apt-get install -y \
     git \
+    tmux \
+    unzip \
     vim \
     wget \
+    zip \
     python3 \
     python3-dev \
     python3-pip \
-    tmux \
     # Remove package lists
     && rm -rf /var/lib/apt/lists/*
 
