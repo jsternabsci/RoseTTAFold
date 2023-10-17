@@ -2,6 +2,17 @@
 This package contains deep learning models and related scripts to run RoseTTAFold.  
 This repository is the official implementation of RoseTTAFold: Accurate prediction of protein structures and interactions using a 3-track network.
 
+## Run with docker
+```
+git clone https://github.com/jsternabsci/RoseTTAFold
+cd RoseTTAFold
+docker build -f docker/Dockerfile -t rosettafold .
+docker run -dit --name rosettafold_container --rm -v /data/alphafold/:/data rosettafold
+docker exec -it rosettafold_container /bin/bash
+cd ./example
+../run_e2e_ver.sh input.fa . /data
+```
+
 ## Installation
 
 1. Clone the package

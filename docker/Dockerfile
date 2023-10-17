@@ -25,7 +25,7 @@ RUN cd /home && \
     bash Miniconda3-py38_4.10.3-Linux-x86_64.sh -b -p $HOME/miniconda
 RUN $HOME/miniconda/bin/conda init bash
 
-RUN git clone https://github.com/RosettaCommons/RoseTTAFold.git
+COPY . /RoseTTAFold
 
 WORKDIR /RoseTTAFold
 
